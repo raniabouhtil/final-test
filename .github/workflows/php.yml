@@ -13,13 +13,12 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    
     services:
       mysql:
         image: mysql:latest
         env:
-          MYSQL_ROOT_PASSWORD: ''
-          MYSQL_DATABASE: projet
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: mydatabase
         ports:
           - 3306:3306
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
