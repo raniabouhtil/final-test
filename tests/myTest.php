@@ -2,8 +2,8 @@
 use PHPUnit\Framework\TestCase;
 require_once dirname(__DIR__).'/controllers/TypeofloansController.php';
 require_once dirname(__DIR__).'/models/Typeofloans.php';
-
-
+require __DIR__ . '/database/Db.php';
+var_dump(class_exists('DB'));  
 
 final class myTest extends TestCase
 {
