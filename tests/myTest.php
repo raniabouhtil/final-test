@@ -2,7 +2,7 @@
 use PHPUnit\Framework\TestCase;
 require_once dirname(__DIR__).'/controllers/TypeofloansController.php';
 require_once dirname(__DIR__).'/models/Typeofloans.php';
-require_once __DIR__ . '/../Db.php';
+
 
 
 final class myTest extends TestCase
@@ -16,6 +16,7 @@ public  function testExample()
 }
 public function testAddLoan()
 {
+    
    // return $this->assertTrue(true);
     // Préparer les données du formulaire de test
     $_POST['submit']=true;
