@@ -1,7 +1,7 @@
 <?php
 use PHPUnit\Framework\TestCase;
-require_once 'C:\xampp\htdocs\final - test\controllers\TypeofloansController.php';
-require_once 'C:\xampp\htdocs\final - test\models\Typeofloans.php';
+require_once '.\controllers\TypeofloansController.php';
+require_once '.\models\Typeofloans.php';
 
 
 final class myTest extends TestCase
