@@ -1,7 +1,7 @@
 <?php
 use PHPUnit\Framework\TestCase;
-require_once dirname(__DIR__).'\controllers\TypeofloansController.php';
-require_once dirname(__DIR__).'\models\Typeofloans.php';
+require_once dirname(__DIR__).'/controllers/TypeofloansController.php';
+require_once dirname(__DIR__).'/models/Typeofloans.php';
 
 
 final class myTest extends TestCase
