@@ -1,4 +1,7 @@
 <?php 
+/**
+ * @runTestsInSeparateProcesses
+ */
 class TypeofloansController
 {
 	public function getAllLoans(){
@@ -39,10 +42,16 @@ class TypeofloansController
 			);
 			$result = Typeofloans::addloan($data);
 			if($result === 'ok'){
-				Session::set('success','Loan Ajouté');
-				Redirect::to('loans');
+				
+				//Session::set('success','Loan Ajouté');
+				
+				//Redirect::to('loans');
+				return true;
+				
 			}else{
+				
 				echo $result;
+				return false;
 			}
 		}
 	}
