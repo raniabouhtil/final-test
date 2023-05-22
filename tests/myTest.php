@@ -2,7 +2,7 @@
 use PHPUnit\Framework\TestCase;
 require_once dirname(__DIR__).'/controllers/TypeofloansController.php';
 require_once dirname(__DIR__).'/models/Typeofloans.php';
-ini_set('database\Db.php', ini_get('database\Db.php') . PATH_SEPARATOR . __DIR__ . 'database\Db.php');
+//ini_set('database\Db.php', ini_get('database\Db.php') . PATH_SEPARATOR . __DIR__ . 'database\Db.php');
 require_once 'Db.php';
 
 final class myTest extends TestCase
@@ -27,7 +27,7 @@ public function testAddLoan()
 
     // Exécuter le code de test
     $loan = new TypeofloansController();
-  
+    $this->assertTrue(true);
     $this->assertTrue($loan->addLoan());
     // Vérifier les résultats attendus
     /*$this->assertIsString($loan->loanType);
